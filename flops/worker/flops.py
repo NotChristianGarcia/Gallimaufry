@@ -12,12 +12,13 @@ if threads:
     os.environ["OMP_NUM_THREADS"] = str(threads)
 
 import numpy
-
+whole_start = time.time()
 A = numpy.random.normal(0, std_dev, (size, size))
 B = numpy.random.normal(0, std_dev, (size, size))
-start = time.time()
+
+calc_start = time.time()
 C = numpy.dot(A, B)
-#r = numpy.linalg.eig(C)[0]
+
 end = time.time()
 
-print(end-start)
+print(end - whole_start, end - calc_start)
