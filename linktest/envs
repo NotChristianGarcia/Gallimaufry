@@ -1,0 +1,6 @@
+export URL=https://webhook.site/4c3f9f5a-a271-4644-b652-cb398a4d1faf
+export EVENT_MSG='test message'
+
+export RETRIES_VAR=3
+export TIMEOUT_VAR=5
+
