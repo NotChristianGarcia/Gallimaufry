@@ -5,8 +5,8 @@ Abaco. Does some cool multi-threaded math and outputs total time to completion.
 import os
 import time
 
-threads, std_dev, size = map(int, os.environ.get('MSG').split())
-#threads, std_dev, size = map(int, "3 10 3000".split())
+#threads, std_dev, size = map(int, os.environ.get('MSG').split())
+threads, std_dev, size = map(int, "0 1000 8000".split())
 
 if threads:
     os.environ["OMP_NUM_THREADS"] = str(threads)
